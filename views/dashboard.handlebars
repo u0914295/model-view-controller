@@ -1,0 +1,21 @@
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        {{#if posts.length}}
+            {{#each posts}}
+                {{> post-block}}
+            {{/each}}
+        {{else}}
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h2 class="card-title">Create your first post!</h2>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">No posts available</p>
+                </div>
+            </div>
+        {{/if}}
+        <a href="/new" class="btn btn-primary btn-block mb-5">Create a New Post</a>
+    </div>
+</div>
+
+<script src="/assets/js/deletePost.js"></script>

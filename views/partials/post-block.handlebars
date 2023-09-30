@@ -1,0 +1,12 @@
+<div class="card mb-4">
+    <div class="card-header">
+        <h2 class="card-title"><a href="/post/{{id}}">{{title}}</a></h2>
+        <p class="card-subtitle mb-2 text-muted">Posted on {{format_date date_created}} by {{user.username}}</p>
+    </div>
+    <div class="card-body">
+        <p class="card-text">{{truncate content length=200}}</p>
+        <a href="/edit/{{id}}" class="btn btn-primary">Edit</a>
+        <button class="btn btn-primary delete" data-id="{{id}}">Delete</button>
+    </div>
+</div>
+
